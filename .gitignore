@@ -1,0 +1,9 @@
+node_modules/
+extension/dist/
+test-results/
+playwright-report/
+
+# Real credentials never leave this machine.
+.env
+.credentials.local.json
+extension/config.local.json

@@ -1,0 +1,24 @@
+{
+  "name": "nucleos-khan-signin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "signup": "tsx onboarding/signup.ts",
+    "build": "node extension/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "npm run build && playwright test",
+    "test:all": "npm run typecheck && npm test && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/chrome": "^0.1.0",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.0",
+    "jsdom": "^26.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
